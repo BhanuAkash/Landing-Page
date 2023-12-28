@@ -1157,6 +1157,7 @@ label {
         background-size: cover;
         /* height: auto;
         margin-top: 90px; */
+        height: 50vh;
     }
 
     .left-photo .text-2 {
