@@ -81,7 +81,7 @@ section .title::before {
     left: 50%;
     width: 180px;
     height: 3px;
-    /* background: #111; */
+    background: #111;
     transform: translateX(-50%);
 }
 
@@ -273,7 +273,7 @@ section .title::after {
 
 /* about section styling */
 .about-title .title::after {
-    content: "Momminpet Sangareddy, Hyderabad.";
+    content: "Mominpet Sangareddy, Hyderabad.";
 }
 
 .about .about-content .left {
@@ -827,6 +827,12 @@ footer .information p {
     transition: all 0.3s ease;
 }
 
+.services .serv-content .card-bhanu img {
+    width: 100%;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
 .home-1 {
     flex-wrap: wrap;
     width: 100%;
@@ -1030,6 +1036,44 @@ label {
     width: 250px;
 }
 
+.click-here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.click-here p {
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 2px crimson solid;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.click-here p .click-here-button {
+    border: none;
+    color: crimson;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    color: crimson;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.ongoing {
+    color: #111;
+    background: #fff;
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img {
@@ -1194,7 +1238,7 @@ label {
         padding: 20px;
     }
 
-    .services .max-width a {
+    .services .max-width .price-button {
         margin-top: 50px;
     }
 
@@ -1219,9 +1263,25 @@ label {
         text-align: center;
 
     }
-   .none .left{
-    display: none;
-   }
+
+    .none .left {
+        display: none;
+    }
+
+    .max-width .before-remove::before {
+        width: 0px;
+        content: "";
+    }
+
+    .click-here p {
+        font-size: 21px;
+    }
+    .click-here .click-here-button{
+        margin-top: 0px;
+    }
+    .click-here {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1233,7 +1293,7 @@ label {
         font-size: 27px;
     }
 
-    
+
     .skills .skills-content .left .text {
         font-size: 19px;
     }
